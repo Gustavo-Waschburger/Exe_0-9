@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <script src="java.js"></script>
+    <title>Exercicio 0.9.1</title>
+</head>
+
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <h1>Meu Chat Web</h1>
+            <button class="menu-button">
+                <svg class="menu-icon" viewBox="0 0 54 54" width="54" height="54">
+                    <ellipse cx="8" cy="3" rx="3" ry="3" />
+                    <ellipse cx="12" cy="12" rx="3" ry="3" />
+                    <ellipse cx="16" cy="21" rx="3" ry="3" />
+                </svg>
+            </button>
+        </div>
+        <hr>
+        <div class="chat-mensagem" id="chat-mensagem">
+            <div class="message received">
+                <span class="received">
+                    <svg class="recebido" xmlns="http://www.w3.org/2000/svg" height="10px" viewBox="0 0 448 512">
+                        <path
+                            d="M342.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 178.7l-57.4-57.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l80 80c12.5 12.5 32.8 12.5 45.3 0l160-160zm96 128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 402.7 54.6 297.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l256-256z" />
+                    </svg>
+                </span>
+                <span class="drop-button">
+                    <button class="dropdown">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="10px" viewBox="0 0 512 512">
+                            <path
+                                d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+                        </svg>
+                    </button>
+                </span>
+                <div class="content">
+                    <p>Oiê!?</p>
+                </div>
+            </div>
+            <div class="message received">
+                <span class="received">
+                    <svg class="recebido" xmlns="http://www.w3.org/2000/svg" height="10px" viewBox="0 0 448 512">
+                        <path
+                            d="M342.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 178.7l-57.4-57.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l80 80c12.5 12.5 32.8 12.5 45.3 0l160-160zm96 128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 402.7 54.6 297.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l256-256z" />
+                    </svg>
+                </span>
+                <span class="drop-button">
+                    <button class="dropdown">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="10px" viewBox="0 0 512 512">
+                            <path
+                                d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+                        </svg>
+                    </button>
+                </span>
+                <div class="content">
+                    <p>Tu não me ama mais?</p>
+                </div>
+            </div>
+            <div class="message sent">
+                <span class="sender">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="10px" viewBox="0 0 448 512">
+                        <path
+                            d="M342.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 178.7l-57.4-57.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l80 80c12.5 12.5 32.8 12.5 45.3 0l160-160zm96 128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 402.7 54.6 297.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l256-256z" />
+                    </svg>
+                </span>
+                <span class="drop-button">
+                    <button class="dropdown">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="10px" viewBox="0 0 512 512">
+                            <path
+                                d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+                        </svg>
+                    </button>
+                </span>
+                <div class="content">
+                    <p>Oi, boa tarde!</p>
+                </div>
+            </div>
+            <div class="message sent">
+                <span class="sender">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="10px" viewBox="0 0 448 512">
+                        <path
+                            d="M342.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 178.7l-57.4-57.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l80 80c12.5 12.5 32.8 12.5 45.3 0l160-160zm96 128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 402.7 54.6 297.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l256-256z" />
+                    </svg>
+                </span>
+                <span class="drop-button">
+                    <button class="dropdown">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="10px" viewBox="0 0 512 512">
+                            <path
+                                d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+                        </svg>
+                    </button>
+                </span>
+                <div class="content">
+                    <p>Quem é você mesmo?</p>
+                </div>
+            </div>
+            <div class="message received">
+                <span class="received">
+                    <svg class="recebido" xmlns="http://www.w3.org/2000/svg" height="10px" viewBox="0 0 448 512">
+                        <path
+                            d="M342.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 178.7l-57.4-57.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l80 80c12.5 12.5 32.8 12.5 45.3 0l160-160zm96 128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 402.7 54.6 297.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l256-256z" />
+                    </svg>
+                </span>
+                <span class="drop-button">
+                    <button class="dropdown">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="10px" viewBox="0 0 512 512">
+                            <path
+                                d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+                        </svg>
+                    </button>
+                </span>
+                <div class="content">
+                    <p>Como assim, quem é você mesmo?</p>
+                </div>
+            </div>
+            <div id="add-mensagem"></div>
+
+        </div>
+        <div class="input-area">
+            <textarea id="input-mensagem" placeholder="Sua mensagem aqui"></textarea>
+            <button class="btn-submit" id="btn-submit" onclick="sendMessage()">Enviar</button>
+        </div>
+    </div>
+</body>
+
+</html>
